@@ -24,4 +24,4 @@ RUN mkdir -p media/avatars
 EXPOSE ${PORT:-8000}
 
 # Run migrations then start server
-CMD alembic upgrade head && uvicorn app.main:application --host 0.0.0.0 --port ${PORT:-8000}
+CMD ["sh", "-c", "alembic upgrade head && uvicorn app.main:application --host 0.0.0.0 --port ${PORT:-8000}"]
