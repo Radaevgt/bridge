@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip show:*)",
+      "Bash(pip install:*)",
+      "Bash(python -m pytest tests/test_auth.py -xvs)",
+      "Bash(python -m pytest tests/test_lesson_plans.py -xvs)"
+    ]
+  }
+}
